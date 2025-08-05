@@ -442,6 +442,10 @@ footer {
     color: #ccc;
     text-decoration: none;
 }
+.footer-img{
+    height: 92px;
+    width: 100px;
+}
 .footer-links ul { list-style: none; }
 .footer-links li { margin-bottom: 0.5rem; }
 .footer-social a { display: block; margin-bottom: 0.5rem; }

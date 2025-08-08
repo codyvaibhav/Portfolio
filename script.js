@@ -1,3 +1,17 @@
+
+const hamburger = document.querySelector('.hamburger-menu');
+const navLinks = document.querySelector('.nav-links');
+
+hamburger.addEventListener('click', () => {
+  navLinks.classList.toggle('active');
+});
+
+window.addEventListener('scroll', () => {
+    if (navLinks.classList.contains('active')) {
+        navLinks.classList.remove('active');
+    }
+});
+
 document.addEventListener('DOMContentLoaded', () => {
 
     // Highlight active navigation link on scroll
@@ -72,5 +86,4 @@ document.addEventListener('DOMContentLoaded', () => {
         const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
         return regex.test(email);
     }
-
 });
